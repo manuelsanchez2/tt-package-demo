@@ -1,0 +1,23 @@
+{
+  "name": "tt-package-demo",
+  "version": "0.0.1",
+  "description": "A demo package for Total TypeScript",
+  "keywords": [
+    "demo",
+    "typescript"
+  ],
+  "homepage": "https://github.com/manuelsanchez2/tt-package-demo",
+  "bugs": {
+    "url": "https://github.com/manuelsanchez2/tt-package-demo/issues"
+  },
+  "author": "Manuel Sanchez <manusansan22@gmail.com> (https://manuelsanchezdev.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuelsanchez2/tt-package-demo.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "type": "module"
+}
