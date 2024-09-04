@@ -27,6 +27,7 @@
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "test": "vitest run",
     "dev": "vitest",
+    "update-version": "npx changeset",
     "local-release": "changeset version && changeset publish",
     "prepublishOnly": "npm run ci"
   },
