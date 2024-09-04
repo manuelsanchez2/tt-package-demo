@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" src="dist/index.js"></script>
+  </head>
+  <body>
+    Hola
+    <hello-world></hello-world>
+    <switch-input
+      id="toggle1"
+      name="My Switch"
+      eventOn="switchedOn"
+      eventOff="switchedOff"
+    ></switch-input>
+
+    <switch-input
+      id="toggle3"
+      name="My Switch"
+      eventOn="switchedOn"
+      eventOff="switchedOff"
+    ></switch-input>
+
+    <switch-input
+      id="toggle5"
+      name="My Switch"
+      eventOn="switchedOn"
+      eventOff="switchedOff"
+    ></switch-input>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-block: 2rem">
+      <wcag-card criterion="1.1.1"></wcag-card>
+      <wcag-card criterion="1.2.1"></wcag-card>
+      <wcag-card criterion="2.1.1"></wcag-card>
+      <wcag-card criterion="2.1.3"></wcag-card>
+    </div>
+
+    <script>
+      document.querySelector('#toggle1').addEventListener('switchedOn', () => {
+        console.log('Switch is turned on!');
+      });
+      document.querySelector('#toggle1').addEventListener('switchedOff', () => {
+        console.log('Switch is turned off!');
+      });
+    </script>
+  </body>
+</html>
