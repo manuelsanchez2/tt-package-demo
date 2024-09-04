@@ -1,5 +1,5 @@
 {
-  "name": "tt-package-demo",
+  "name": "test-npm-package-add",
   "version": "0.0.1",
   "description": "A demo package for Total TypeScript",
   "keywords": [
@@ -18,6 +18,13 @@
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build"
+  },
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
 }
